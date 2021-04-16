@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;500;900&display=swap');
 
 /* EN TODOS LOS HTML */
-/* 
-PALETA
-#e5d09b dorado
-#6d8ca8 azul
-#6E6E68 gris
-#90B482 verde
-#eeeee4 crema
- */
+:root {
+    --dorado: #e5d09b;
+    --dorado-transparencia: #e5d09bc2;
+    --azul-logo: #6d8ca8;
+    --gris-texto: #6E6E68;
+    --verde: #90B482;
+    --verde-transparencia: #90b48227;
+    --crema-bg: #eeeee4;
+}
 
 /* margen contenido 3vw a los costados (total espacio body 94vw) */
 
 /* WOW ANIMATE
 pulse
 fadeInDown */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Yantramanav', sans-serif;
-    color: #6E6E68;
+    color: var(--gris-texto);
 }
 
 h2 {
@@ -52,7 +52,7 @@ a {
 }
 
 .navbar {
-    background-color: #e5d09bc2;
+    background-color: var(--dorado-transparencia);
     width: 100vw;
     padding: 0.5rem 3rem;
     display: flex;
@@ -83,7 +83,7 @@ a {
 }
 
 .navbar .navbar__list a:hover {
-    color: #6d8ca8;
+    color: var(--azul-logo);
 }
 
 .navbar__bg {
@@ -118,7 +118,7 @@ a {
 }
 
 main {
-    background-color: #eeeee4;
+    background-color: var(--crema-bg);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, auto);
@@ -234,7 +234,7 @@ main {
 }
 
 .codificar .codificar__content .codificar__content--text li a {
-    color: #90B482;
+    color: var(--verde);
     font-weight: 500;
 }
 
@@ -486,7 +486,7 @@ main {
 .consulta h2 {
     text-align: center;
     font-style: italic;
-    color: #90B482;
+    color: var(--verde);
 }
 
 .consulta .consulta__content {
@@ -516,7 +516,7 @@ main {
     margin-top: 1rem;
     padding: 10px;
     background-color: #d1e0cb;
-    border: 1.5px solid #90B482;
+    border: 1.5px solid var(--verde);
     border-radius: 1rem;
 }
 
@@ -526,7 +526,7 @@ main {
 }
 
 .consulta .consulta__content .consulta__content--buttom a {
-    color: #6d8ca8;
+    color: var(--azul-logo);
     font-weight: 500;
     font-size: 1.2rem;
 }
@@ -559,7 +559,7 @@ main {
 }
 
 .contacto .contacto__texto a {
-    color: #90B482;
+    color: var(--verde);
     font-weight: 500;
 }
 
@@ -596,8 +596,8 @@ main {
 .contacto .contacto__form .contacto__form--botones input {
     font-weight: 300;
     padding: 0.5rem 1rem;
-    background-color: #90b48227;
-    border: solid #90B482;
+    background-color: var(--verde-transparencia);
+    border: solid var(--verde);
     border-radius: 0.5rem;
 }
 
