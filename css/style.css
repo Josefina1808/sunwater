@@ -17,11 +17,15 @@
 pulse
 fadeInDown */
 * {
-    margin: 0;
+    /* margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; */
     font-family: 'Yantramanav', sans-serif;
-    color: var(--gris-texto);
+    color: var(--gris-texto); 
+}
+
+body {
+    background-color: var(--crema-bg);
 }
 
 h2 {
@@ -53,36 +57,42 @@ a {
 
 .navbar {
     background-color: var(--dorado-transparencia);
-    width: 100vw;
-    padding: 0.5rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
     animation-name: aparecer;
     animation-duration: 1s;
     animation-iteration-count: 1;
     z-index: 10;
+    width: 100vw;
+    position:fixed;
+    top: 0;
 }
 
 .navbar .navbar__logo {
     height: 70px;
 }
 
-.navbar .navbar__list {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+button.navbar-toggler{
+    border: 2px solid #6d8ca8;
+    transition: border .15s ease-in-out;
+}
+
+button.navbar-toggler:focus{
+    border: 3px solid #6d8ca8;
+    box-shadow: none;
+}
+
+i.fas.fa-bars {
+    color: var(--azul-logo);
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--gris-texto);
     font-weight: 500;
     font-size: 1.2rem;
+    padding-right: 0.5rem;
 }
 
-.navbar .navbar__list li {
-   padding-right: 0.5rem;
-}
-
-.navbar .navbar__list a:hover {
+.navbar-nav .nav-item .nav-link:hover {
     color: var(--azul-logo);
 }
 
@@ -495,18 +505,25 @@ main {
     align-items: center;
 }
 
+.consulta__content--img {
+    background-image: url(../img/faq--img.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .consulta .consulta__content img {
     width: 50%;
     width: 20rem;
     margin: 0 auto;
 }
 
-.consulta .consulta__content .consulta__content--text {
+/* .consulta .consulta__content .consulta__content--text {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .consulta .consulta__content .consulta__content--text p {
     text-align: justify;
