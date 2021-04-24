@@ -9,22 +9,15 @@
     justify-content: center;
     grid-column: 1 / 13;
     grid-row: 1 / 9;
-}
-
-.galeria-fotos h2,
-.galeria-musical h2 {
-    margin-bottom: 1rem;
-}
-
-.galeria-fotos .galeria-fotos__content {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.galeria-fotos .galeria-fotos__content img {
-    width: 21rem;
-    padding: 1rem;
+    .galeria-fotos__content {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        img {
+            width: 21rem;
+            padding: 1rem;
+        }
+    }
 }
 
 .galeria-musical {
@@ -36,10 +29,9 @@
     justify-content: center;
     grid-column: 1 / 13;
     grid-row: 9 / 13;
-}
-
-.galeria-musical .galeria-musical__spotify {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    .galeria-musical__spotify {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 }
