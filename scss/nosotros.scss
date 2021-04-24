@@ -1,0 +1,68 @@
+/* NOSOTROS */
+
+.historia {
+    width: 90vw;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1 / 13;
+    grid-row: 1 / 7;
+}
+
+.historia .historia__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.historia .historia__content .historia__content--text {
+    width: 50%;
+    height: min-content;
+    text-align: justify;
+}
+
+.historia .historia__content .historia__content--img {
+    width: 50%;
+    margin: 2rem;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pilares {
+    width: 90vw;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1rem;
+    grid-column: 1 / 13;
+    grid-row: 7 / 13;
+}
+
+.pilares .pilares__content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pilares .pilares__content .pilares__content--valores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+
+}
+
+.pilares .pilares__content .pilares__content--valores img {
+    height: 9rem;
+    text-align: center;
+}
+
+.pilares .pilares__content .pilares__content--valores h3 {
+    text-align: center;
+    padding: 0.5rem;
+}
