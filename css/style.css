@@ -1,35 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;500;900&display=swap");
 * {
   /* margin: 0;
     padding: 0;
     box-sizing: border-box; */
   font-family: "Yantramanav", sans-serif;
   color: #6E6E68; }
-
-body {
-  background-color: #eeeee4; }
-
-h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  padding: 2rem 0rem 1rem 0rem; }
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  padding-left: 2rem; }
-
-p {
-  font-size: 1.2rem;
-  font-weight: 300; }
-
-ul,
-ol {
-  list-style-type: none;
-  text-decoration: none; }
-
-a {
-  text-decoration: none; }
+  * body {
+    background-color: #eeeee4; }
+    * body main {
+      background-color: #eeeee4;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, auto); }
+    * body h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      padding: 2rem 0rem 1rem 0rem; }
+    * body h3 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      padding-left: 2rem; }
+    * body p {
+      font-size: 1.2rem;
+      font-weight: 300; }
+    * body ul,
+    * body ol {
+      list-style-type: none;
+      text-decoration: none; }
+    * body a {
+      text-decoration: none; }
 
 .navbar {
   background-color: #e5d09bb7;
@@ -104,12 +104,6 @@ button.navbar-toggler:focus {
 #contacto__navbar--bg {
   background-image: url(../img/backgrond4.jpg); }
 
-main {
-  background-color: #eeeee4;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, auto); }
-
 .footer {
   background-color: #e5d09b;
   width: 100%;
@@ -136,6 +130,13 @@ main {
     .footer .footer__derechos-lugar p {
       padding: 0rem 3rem 1rem 3rem;
       font-size: 1rem; }
+
+/* ANIMACIONES */
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .solarizar {
   width: 90vw;
@@ -445,10 +446,21 @@ main {
       justify-content: center;
       margin: 1rem 0rem;
       font-weight: 300; }
+      .contacto .contacto__form div .form-control:focus {
+        border-color: #90B482;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(144, 180, 130, 0.5); }
+      .contacto .contacto__form div .form-control {
+        color: #6E6E68;
+        border: 1px solid #90B482; }
     .contacto .contacto__form .contacto__form--news {
       display: flex;
       flex-direction: row;
       align-items: center; }
+      .contacto .contacto__form .contacto__form--news .form-check-input {
+        border: #90B482;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(144, 180, 130, 0.5); }
+      .contacto .contacto__form .contacto__form--news .form-check-input:checked {
+        background-color: #90B482; }
     .contacto .contacto__form .contacto__form--botones {
       display: flex;
       flex-direction: row;
@@ -512,10 +524,3 @@ main {
         text-decoration: underline;
         transform: scale(1.2);
         transition: all 1s; }
-
-/* ANIMACIONES */
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }

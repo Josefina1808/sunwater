@@ -1,14 +1,12 @@
-<<<<<<< HEAD
-=======
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;500;900&display=swap');
 
->>>>>>> 3317f7d5b476431746a427f0a5f47e20808bc60f
 $dorado-transparencia: #e5d09bb7;
 $azul-logo: #6d8ca8;
 $azul-logo-transparencia:rgba(108, 140, 167, 0.8); 
 $gris-texto: #6E6E68;
 $verde: #90B482;
 $verde-transparencia: #90b48227;
+$verde-transparencia-form: rgba(144,180,130,0.50);
 $crema-bg: #eeeee4;
 $dorado: #e5d09b;
 $font:'Yantramanav', sans-serif;
@@ -19,37 +17,40 @@ $font:'Yantramanav', sans-serif;
     box-sizing: border-box; */
     font-family: $font;
     color: $gris-texto; 
-}
-
-body {
-    background-color: $crema-bg;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    padding: 2rem 0rem 1rem 0rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding-left: 2rem;   
-}
-
-p {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-ul,
-ol {
-    list-style-type: none;
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
+    body {
+        background-color: $crema-bg;
+        main {
+            background-color: $crema-bg;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, auto);
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 500;
+            padding: 2rem 0rem 1rem 0rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding-left: 2rem;   
+        }
+        
+        p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        
+        ul,
+        ol {
+            list-style-type: none;
+            text-decoration: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+    }    
 }
 
 .navbar {
@@ -97,6 +98,7 @@ button.navbar-toggler:focus{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
     .navbar__bg--titule {
         min-height: 500px;
         width: fit-content;
@@ -131,13 +133,6 @@ $navbar__bg: (
     ##{$name-page}__navbar--bg {
         background-image: #{$bg-image};
     }
-}
-
-main {
-    background-color: $crema-bg;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, auto);
 }
 
 .footer {
@@ -176,10 +171,6 @@ main {
 }
 
 /* ANIMACIONES */
-<<<<<<< HEAD
-=======
-
->>>>>>> 3317f7d5b476431746a427f0a5f47e20808bc60f
 @keyframes aparecer {
     0% {
         opacity: 0;

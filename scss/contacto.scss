@@ -20,6 +20,7 @@
     .contacto__texto a:hover {
         text-decoration: underline;
     }
+   
     .contacto__form {
         margin: 0 auto;
         div {
@@ -28,11 +29,26 @@
             justify-content: center;
             margin: 1rem 0rem;
             font-weight: 300;
+            .form-control:focus {
+                border-color: $verde;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px  $verde-transparencia-form;
+            }
+            .form-control {
+                color: $gris-texto;
+                border: 1px solid $verde;
+            }
         }
         .contacto__form--news {
             display: flex;
             flex-direction: row;
             align-items: center;
+            .form-check-input {
+                border: $verde;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px  $verde-transparencia-form;
+            }
+            .form-check-input:checked {
+                background-color: $verde;
+        }
         }
         .contacto__form--botones {
             display: flex;
