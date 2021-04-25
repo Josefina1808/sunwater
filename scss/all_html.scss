@@ -2,55 +2,60 @@
 
 $dorado-transparencia: #e5d09bb7;
 $azul-logo: #6d8ca8;
-$azul-logo-transparencia:rgba(108, 140, 167, 0.8); 
+$azul-logo-transparencia:rgba(108, 140, 167, 0.8);
 $gris-texto: #6E6E68;
 $verde: #90B482;
 $verde-transparencia: #90b48227;
-$verde-transparencia-form: rgba(144,180,130,0.50);
+$verde-transparencia-form: rgba(144, 180, 130, 0.50);
 $crema-bg: #eeeee4;
 $dorado: #e5d09b;
-$font:'Yantramanav', sans-serif;
+$font:'Yantramanav',
+sans-serif;
 
 * {
     /* margin: 0;
     padding: 0;
     box-sizing: border-box; */
     font-family: $font;
-    color: $gris-texto; 
+    color: $gris-texto;
+
     body {
         background-color: $crema-bg;
+
         main {
             background-color: $crema-bg;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: repeat(12, auto);
         }
+
         h2 {
             font-size: 2rem;
             font-weight: 500;
             padding: 2rem 0rem 1rem 0rem;
         }
+
         h3 {
             font-size: 1.5rem;
             font-weight: 400;
-            padding-left: 2rem;   
+            padding-left: 2rem;
         }
-        
+
         p {
             font-size: 1.2rem;
             font-weight: 300;
         }
-        
+
         ul,
         ol {
             list-style-type: none;
             text-decoration: none;
         }
-        
+
         a {
             text-decoration: none;
         }
-    }    
+    }
 }
 
 .navbar {
@@ -60,22 +65,25 @@ $font:'Yantramanav', sans-serif;
     animation-iteration-count: 1;
     z-index: 10;
     width: 100vw;
-    position:fixed;
+    position: fixed;
     top: 0;
+
     .navbar__logo {
         height: 70px;
     }
 }
 
-button.navbar-toggler{
+button.navbar-toggler {
     border: 2px solid $azul-logo;
     transition: border .15s ease-in-out;
+
     span i.fas.fa-bars {
         color: $azul-logo;
         font-size: 1.5rem;
     }
 }
-button.navbar-toggler:focus{
+
+button.navbar-toggler:focus {
     border: 3px solid $azul-logo;
     box-shadow: none;
 }
@@ -91,47 +99,33 @@ button.navbar-toggler:focus{
     color: $azul-logo;
 }
 
-.navbar__bg {
-    min-height: 500px;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    .navbar__bg--titule {
-        min-height: 500px;
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        h1 {
-            padding: 0.5rem 1rem;
-            background-color: rgba(255, 255, 255, 0.651);
-            font-weight: 500;
-            font-size: 2rem;
-            border-radius: 0.5rem;
-            text-align: center;
-            letter-spacing: 4px;
-            animation-name: aparecer;
-            animation-duration: 2s;
-            animation-iteration-count: 1;
-        }
+.navbar__bg--titule {
+    margin: 0 auto;
+    width: fit-content;
+    position: absolute;
+    right: 15%;
+    bottom: 40%;
+    left: 15%;
+    z-index: 5;
+    text-align: center;
+
+    h1 {
+        padding: 0.5rem 1rem;
+        background-color: rgba(255, 255, 255, 0.651);
+        font-weight: 500;
+        font-size: 2rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        letter-spacing: 4px;
+        animation-name: aparecer;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
     }
 }
 
-$navbar__bg: (
-    index: url(../img/backgrond7.jpg),
-    nosotros: url(../img/backgrond1.jpg),
-    galeria: url(../img/backgrond2.jpg),
-    faq: url(../img/backgrond6.jpg),
-    contacto: url(../img/backgrond4.jpg),
-);
-
-@each $name-page, $bg-image in $navbar__bg {
-    ##{$name-page}__navbar--bg {
-        background-image: #{$bg-image};
+@media (max-width: 576px) {
+    .navbar__bg--titule {
+        display: none;
     }
 }
 
@@ -139,35 +133,42 @@ $navbar__bg: (
     background-color: #e5d09b;
     width: 100%;
     height: fit-content;
+
     .footer__logo {
         padding: 0.5rem 0rem 0.3rem 0rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         img {
             height: 60px;
             text-align: center;
         }
     }
+
     .footer__redes {
         text-align: center;
+
         a {
             padding: 0rem 0.2rem;
+
             i:hover {
                 transform: scale(1.2);
                 transition: all 1s;
             }
         }
     }
+
     .footer__derechos-lugar {
         display: flex;
         justify-content: space-between;
+
         p {
             padding: 0rem 3rem 1rem 3rem;
             font-size: 1rem;
         }
-    }    
+    }
 }
 
 /* ANIMACIONES */
