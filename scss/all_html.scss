@@ -169,6 +169,19 @@ button.navbar-toggler:focus {
             font-size: 1rem;
         }
     }
+    @media (max-width: 576px) {
+        .footer__derechos-lugar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+            p {
+                padding: 0rem 0rem 0rem 0rem;
+                font-size: 1rem;
+            }
+        }
+    }
 }
 
 /* ANIMACIONES */

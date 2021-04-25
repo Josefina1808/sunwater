@@ -63,46 +63,30 @@ button.navbar-toggler:focus {
 .navbar-nav .nav-item .nav-link:hover {
   color: #6d8ca8; }
 
-.navbar__bg {
-  min-height: 500px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .navbar__bg .navbar__bg--titule {
-    min-height: 500px;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto; }
-    .navbar__bg .navbar__bg--titule h1 {
-      padding: 0.5rem 1rem;
-      background-color: rgba(255, 255, 255, 0.651);
-      font-weight: 500;
-      font-size: 2rem;
-      border-radius: 0.5rem;
-      text-align: center;
-      letter-spacing: 4px;
-      animation-name: aparecer;
-      animation-duration: 2s;
-      animation-iteration-count: 1; }
+.navbar__bg--titule {
+  margin: 0 auto;
+  width: fit-content;
+  position: absolute;
+  right: 15%;
+  bottom: 40%;
+  left: 15%;
+  z-index: 5;
+  text-align: center; }
+  .navbar__bg--titule h1 {
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.651);
+    font-weight: 500;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    letter-spacing: 4px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: 1; }
 
-#index__navbar--bg {
-  background-image: url(../img/backgrond7.jpg); }
-
-#nosotros__navbar--bg {
-  background-image: url(../img/backgrond1.jpg); }
-
-#galeria__navbar--bg {
-  background-image: url(../img/backgrond2.jpg); }
-
-#faq__navbar--bg {
-  background-image: url(../img/backgrond6.jpg); }
-
-#contacto__navbar--bg {
-  background-image: url(../img/backgrond4.jpg); }
+@media (max-width: 576px) {
+  .navbar__bg--titule {
+    display: none; } }
 
 .footer {
   background-color: #e5d09b;
@@ -130,6 +114,16 @@ button.navbar-toggler:focus {
     .footer .footer__derechos-lugar p {
       padding: 0rem 3rem 1rem 3rem;
       font-size: 1rem; }
+  @media (max-width: 576px) {
+    .footer .footer__derechos-lugar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem; }
+      .footer .footer__derechos-lugar p {
+        padding: 0rem 0rem 0rem 0rem;
+        font-size: 1rem; } }
 
 /* ANIMACIONES */
 @keyframes aparecer {
@@ -478,7 +472,7 @@ button.navbar-toggler:focus {
 .redes {
   width: 100vw;
   height: fit-content;
-  background-image: url(../img/backgrond6.jpg);
+  background-image: url(../img/bg-faq.jpg);
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
