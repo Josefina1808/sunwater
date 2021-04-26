@@ -575,6 +575,9 @@ button.navbar-toggler:focus {
         transition: all 1s; }
       .redes .redes__div .redes__div--instagram .redes__div--instagram--link {
         color: white;
+        background-color: rgba(108, 140, 167, 0.8);
+        border-radius: 5px;
+        padding: 0rem 1rem 0rem 1rem;
         letter-spacing: 0.3rem;
         font-weight: 400;
         margin-left: 2rem;
