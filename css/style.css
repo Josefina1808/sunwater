@@ -381,6 +381,7 @@ button.navbar-toggler:focus {
     flex-wrap: wrap; }
     .galeria-fotos .galeria-fotos__content img {
       width: 21rem;
+      height: 21rem;
       padding: 1rem; }
 
 .galeria-musical {
