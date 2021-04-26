@@ -1,5 +1,4 @@
 .solarizar {
-    width: 90vw;
     height: fit-content;
     margin: 0 auto;
     display: flex;
@@ -7,27 +6,51 @@
     justify-content: center;
     grid-column: 1/13;
     grid-row: 1 / 4;
+
     .solarizar__content {
         display: flex;
         justify-content: space-between;
+
         .solarizar__content--text {
-            width: 50%;
             height: min-content;
             text-align: justify;
         }
+
         .solarizar__content--img {
-            width: 50%;
-            margin: 2rem;
             background-image: url(../img/4.jpg);
             background-size: cover;
             background-position: bottom right;
             background-repeat: no-repeat;
         }
     }
+
+    @media(max-width:992px) {
+        .solarizar__content {
+            flex-direction: column;
+
+            .solarizar__content--img {
+                height: 30rem;
+            }
+        }
+    }
+
+    @media(min-width:992px) {
+        .solarizar__content {
+            flex-direction: row;
+
+            .solarizar__content--text {
+                width: 50%;
+            }
+
+            .solarizar__content--img {
+                width: 50%;
+                margin-left: 2rem;
+            }
+        }
+    }
 }
 
 .codificar {
-    width: 90vw;
     height: fit-content;
     margin: 0 auto;
     display: flex;
@@ -35,47 +58,78 @@
     justify-content: center;
     grid-column: 1/13;
     grid-row: 4 / 13;
+
     .codificar__content {
         display: flex;
         justify-content: space-between;
+
         .codificar__content--text {
-            width: 50%;
             height: min-content;
             text-align: justify;
             font-size: 1.2rem;
             font-weight: 300;
+            margin: 0;
+
+            p {
+                margin-bottom: 0rem;
+            }
+
             li {
                 padding: 0.5rem 0rem;
                 font-size: 1.4rem;
+
                 a {
-                    color: var(--verde);
+                    color: $verde;
                     font-weight: 500;
                 }
             }
         }
+
         .codificar__content--img {
-            width: 50%;
-            margin: 2rem;
             background-image: url(../img/7.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
     }
+
+    @media (max-width:992px) {
+        .codificar__content {
+            flex-direction: column;
+
+            .codificar__content--img {
+                display: none;
+            }
+        }
+    }
+
+    @media (min-width:992px) {
+        .codificar__content {
+            .codificar__content--text {
+                width: 50%;
+            }
+
+            .codificar__content--img {
+                width: 50%;
+                margin-left: 2rem;
+            }
+        }
+    }
 }
 
 .geometria {
-    width: 90vw;
     height: fit-content;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .geometria__content {
-        height: 90%;
+        width: 90vw;
         display: flex;
         justify-content: space-around;
         padding: 1rem;
+
         .geometria__content--img {
             width: 25rem;
             height: 25rem;
@@ -85,7 +139,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0rem 1rem 0rem 0rem;
+            margin: 1rem;
+
             .geometria__content--img--text {
                 width: fit-content;
                 background-color: #efde8193;
@@ -100,38 +155,78 @@
             }
         }
     }
+
+    @media(max-width:992px) {
+        .geometria__content {
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
+            .intencionar__content--img {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    @media(min-width:992px) {
+        .geometria__content {
+            flex-direction: row;
+        }
+    }
 }
 
 #flor {
     background-image: url(../img/flor_de_la_vida.jpg);
 }
+
 #metatron {
     background-image: url(../img/metraton.jpg);
 }
 
 .intencionar {
-    width: 90vw;
     height: fit-content;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .intencionar__content {
         display: flex;
         justify-content: space-between;
+
         .intencionar__content--text {
-            width: 60%;
             height: min-content;
             text-align: justify;
-            padding: 1rem 1rem 1rem 2rem;
+            padding: 0rem 1rem 1rem 2rem;
         }
+
         .intencionar__content--img {
-            width: 40%;
-            margin: 2rem;
+            margin: 0rem 0rem 2rem 2rem;
             background-image: url(../img/5.jpg);
             background-size: cover;
             background-position: center bottom;
             background-repeat: no-repeat;
+        }
+    }
+
+    @media (max-width:992px) {
+        .intencionar__content {
+            flex-direction: column;
+
+            .intencionar__content--img {
+                height: 15rem;
+            }
+        }
+    }
+
+    @media (min-width:992px) {
+        .intencionar__content {
+            .intencionar__content--text {
+                width: 60%;
+            }
+
+            .intencionar__content--img {
+                width: 40%;
+            }
         }
     }
 }
