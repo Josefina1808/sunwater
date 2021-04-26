@@ -1,5 +1,4 @@
 .historia {
-    width: 90vw;
     height: fit-content;
     margin: 0 auto;
     display: flex;
@@ -7,24 +6,53 @@
     justify-content: center;
     grid-column: 1 / 13;
     grid-row: 1 / 7;
-    .historia__content {
-        display: flex;
-        justify-content: space-between;
-        .historia__content--text {
-            width: 50%;
-            height: min-content;
-            text-align: justify;
+
+    @media (max-width:992px) {
+        .historia__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .historia__content--text {
+                height: min-content;
+                text-align: justify;
+            }
+
+            .historia__content--img {
+                height: 30rem;
+                margin: 2rem;
+                background-image: url(../img/1.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
         }
-        .historia__content--img {
-            width: 50%;
-            margin: 2rem;
-            background-image: url(../img/1.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }        
     }
+
+    @media (min-width: 992px) {
+        .historia__content {
+            display: flex;
+            justify-content: space-between;
+
+            .historia__content--text {
+                width: 50%;
+                height: min-content;
+                text-align: justify;
+            }
+
+            .historia__content--img {
+                width: 50%;
+                margin: 2rem;
+                background-image: url(../img/1.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
 }
+
 
 .pilares {
     width: 90vw;
@@ -36,22 +64,51 @@
     padding-bottom: 1rem;
     grid-column: 1 / 13;
     grid-row: 7 / 13;
-    .pilares__content {
-        display: flex;
-        justify-content: space-evenly;
-        .pilares__content--valores {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 33%;
-            img {
-                height: 9rem;
-                text-align: center;
+
+    @media (max-width:768px) {
+        .pilares__content {
+
+            .pilares__content--valores {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                img {
+                    height: 9rem;
+                    text-align: center;
+                }
+
+                h3 {
+                    text-align: center;
+                    padding: 0.5rem;
+                }
             }
-            h3 {
-                text-align: center;
-                padding: 0.5rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .pilares__content {
+            display: flex;
+            justify-content: space-evenly;
+
+            .pilares__content--valores {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 33%;
+
+                img {
+                    height: 9rem;
+                    text-align: center;
+                }
+
+                h3 {
+                    text-align: center;
+                    padding: 0.5rem;
+                }
             }
         }
     }
