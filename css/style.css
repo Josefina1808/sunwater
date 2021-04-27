@@ -44,14 +44,14 @@
     height: 70px; }
 
 button.navbar-toggler {
-  border: 2px solid #6d8ca8;
+  border: 2px solid #012e67;
   transition: border .15s ease-in-out; }
   button.navbar-toggler span i.fas.fa-bars {
-    color: #6d8ca8;
+    color: #012e67;
     font-size: 1.5rem; }
 
 button.navbar-toggler:focus {
-  border: 3px solid #6d8ca8;
+  border: 3px solid #012e67;
   box-shadow: none; }
 
 .navbar-nav .nav-item .nav-link {
@@ -61,7 +61,7 @@ button.navbar-toggler:focus {
   padding-right: 0.5rem; }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #6d8ca8; }
+  color: #012e67; }
 
 .navbar__bg--titule {
   margin: 0 auto;
@@ -412,7 +412,7 @@ button.navbar-toggler:focus {
     padding: 0; }
     .faq__preguntas .accordion .accordion-item .accordion-header .accordion-button {
       font-family: "Yantramanav", sans-serif;
-      color: #6d8ca8;
+      color: #012e67;
       font-size: 1.5rem;
       font-weight: 300;
       background-color: #eeeee4; }
@@ -464,7 +464,7 @@ button.navbar-toggler:focus {
       border: 1.5px solid #90B482;
       border-radius: 1rem; }
       .consulta .consulta__content .consulta__content--buttom a {
-        color: #6d8ca8;
+        color: #012e67;
         font-weight: 500;
         font-size: 1.2rem; }
       .consulta .consulta__content .consulta__content--buttom a:hover {
@@ -575,7 +575,7 @@ button.navbar-toggler:focus {
         transition: all 1s; }
       .redes .redes__div .redes__div--instagram .redes__div--instagram--link {
         color: white;
-        background-color: rgba(108, 140, 167, 0.8);
+        background-color: rgba(1, 45, 103, 0.596);
         border-radius: 5px;
         padding: 0rem 1rem 0rem 1rem;
         letter-spacing: 0.3rem;
