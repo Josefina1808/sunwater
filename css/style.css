@@ -13,6 +13,8 @@
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(12, auto); }
+      * body main .img_radius {
+        border-radius: 15px; }
     * body h2 {
       font-size: 2rem;
       font-weight: 500;
@@ -37,11 +39,12 @@
   animation-duration: 1s;
   animation-iteration-count: 1;
   z-index: 10;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0; }
   .navbar .navbar__logo {
-    height: 70px; }
+    height: 70px;
+    margin-left: 0.5rem; }
 
 button.navbar-toggler {
   border: 2px solid #012e67;
@@ -214,7 +217,6 @@ button.navbar-toggler:focus {
   flex-direction: column;
   justify-content: center; }
   .geometria .geometria__content {
-    width: 90vw;
     display: flex;
     justify-content: space-around;
     padding: 1rem; }
@@ -282,9 +284,9 @@ button.navbar-toggler:focus {
         height: 15rem; } }
   @media (min-width: 992px) {
     .intencionar .intencionar__content .intencionar__content--text {
-      width: 60%; }
+      width: 50%; }
     .intencionar .intencionar__content .intencionar__content--img {
-      width: 40%; } }
+      width: 50%; } }
 
 .historia {
   height: fit-content;
@@ -319,14 +321,13 @@ button.navbar-toggler:focus {
         text-align: justify; }
       .historia .historia__content .historia__content--img {
         width: 50%;
-        margin: 2rem;
+        margin: 0rem 2rem 0rem 2rem;
         background-image: url(../img/1.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; } }
 
 .pilares {
-  width: 90vw;
   height: fit-content;
   margin: 0 auto;
   display: flex;
@@ -335,19 +336,24 @@ button.navbar-toggler:focus {
   padding-bottom: 1rem;
   grid-column: 1 / 13;
   grid-row: 7 / 13; }
+  .pilares .pilares__content .pilares__content--valores {
+    background: #efefef;
+    border-radius: 15px;
+    box-shadow: -8px -8px 8px rgba(0, 0, 0, 0.05), 8px 8px 8px rgba(0, 0, 0, 0.05); }
+    .pilares .pilares__content .pilares__content--valores img {
+      height: 9rem;
+      text-align: center;
+      padding: 0.5rem; }
+    .pilares .pilares__content .pilares__content--valores h3 {
+      text-align: center;
+      padding: 0.5rem; }
   @media (max-width: 768px) {
     .pilares .pilares__content .pilares__content--valores {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100%; }
-      .pilares .pilares__content .pilares__content--valores img {
-        height: 9rem;
-        text-align: center; }
-      .pilares .pilares__content .pilares__content--valores h3 {
-        text-align: center;
-        padding: 0.5rem; } }
+      margin: 0rem 2rem 2rem 2rem; } }
   @media (min-width: 768px) {
     .pilares .pilares__content {
       display: flex;
@@ -357,17 +363,18 @@ button.navbar-toggler:focus {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 33%; }
-        .pilares .pilares__content .pilares__content--valores img {
-          height: 9rem;
-          text-align: center; }
-        .pilares .pilares__content .pilares__content--valores h3 {
-          text-align: center;
-          padding: 0.5rem; } }
+        width: 33%;
+        height: auto;
+        margin: 0rem 2rem 0rem 2rem; } }
+  @media (min-width: 1440px) {
+    .pilares .pilares__content {
+      display: flex;
+      justify-content: center; }
+      .pilares .pilares__content .pilares__content--valores {
+        width: 300px; } }
 
 /* GALERIA */
 .galeria-fotos {
-  width: 90vw;
   height: fit-content;
   margin: 0 auto;
   display: flex;
@@ -377,17 +384,20 @@ button.navbar-toggler:focus {
   grid-row: 1 / 9; }
   .galeria-fotos .galeria-fotos__content {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap; }
+    @media (max-width: 992px) {
+      .galeria-fotos .galeria-fotos__content {
+        justify-content: center; } }
+    @media (min-width: 992px) {
+      .galeria-fotos .galeria-fotos__content {
+        justify-content: space-between; } }
     .galeria-fotos .galeria-fotos__content img {
       width: 21rem;
       height: 21rem;
-      padding: 1rem; }
+      padding: 1rem 0rem; }
 
 .galeria-musical {
-  width: 90vw;
   height: fit-content;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -400,7 +410,7 @@ button.navbar-toggler:focus {
 
 /* FAQ */
 .faq__preguntas {
-  width: 90vw;
+  width: 100%;
   height: fit-content;
   margin: 0 auto;
   display: flex;
@@ -432,7 +442,6 @@ button.navbar-toggler:focus {
     font-size: 1.2rem; }
 
 .consulta {
-  width: 90vw;
   height: fit-content;
   margin: 0 auto;
   display: flex;
@@ -473,12 +482,6 @@ button.navbar-toggler:focus {
       transition: 1s;
       transform: scale(1.1); }
 
-/* .consulta .consulta__content .consulta__content--text {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
 /* CONTACTO */
 .contacto {
   width: 90vw;

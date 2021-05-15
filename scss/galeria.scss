@@ -1,7 +1,6 @@
 /* GALERIA */
 
 .galeria-fotos {
-    width: 90vw;
     height: fit-content;
     margin: 0 auto;
     display: flex;
@@ -11,20 +10,24 @@
     grid-row: 1 / 9;
     .galeria-fotos__content {
         display: flex;
-        justify-content: space-evenly;
         flex-wrap: wrap;
+        @media(max-width:992px) {
+            justify-content: center;   
+        }
+        @media(min-width:992px) {
+            justify-content: space-between;   
+        }
         img {
             width: 21rem;
             height: 21rem;
-            padding: 1rem;
-        }
+            padding: 1rem 0rem;
+        }  
     }
 }
 
+
 .galeria-musical {
-    width: 90vw;
     height: fit-content;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

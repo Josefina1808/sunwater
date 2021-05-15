@@ -125,7 +125,6 @@
     justify-content: center;
 
     .geometria__content {
-        width: 90vw;
         display: flex;
         justify-content: space-around;
         padding: 1rem;
@@ -221,11 +220,11 @@
     @media (min-width:992px) {
         .intencionar__content {
             .intencionar__content--text {
-                width: 60%;
+                width: 50%;
             }
 
             .intencionar__content--img {
-                width: 40%;
+                width: 50%;
             }
         }
     }
