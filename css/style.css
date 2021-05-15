@@ -24,14 +24,16 @@
       font-weight: 400;
       padding-left: 2rem; }
     * body p {
-      font-size: 1.2rem;
-      font-weight: 300; }
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-indent: 1rem; }
     * body ul,
     * body ol {
       list-style-type: none;
       text-decoration: none; }
     * body a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #90B482; }
 
 .navbar {
   background-color: #e5d09bb7;
@@ -149,6 +151,10 @@ button.navbar-toggler:focus {
     .solarizar .solarizar__content .solarizar__content--text {
       height: min-content;
       text-align: justify; }
+      .solarizar .solarizar__content .solarizar__content--text a {
+        color: #90B482; }
+      .solarizar .solarizar__content .solarizar__content--text a:hover {
+        text-decoration: underline; }
     .solarizar .solarizar__content .solarizar__content--img {
       background-image: url(../img/4.jpg);
       background-size: cover;
@@ -329,7 +335,6 @@ button.navbar-toggler:focus {
 
 .pilares {
   height: fit-content;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

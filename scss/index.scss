@@ -14,6 +14,12 @@
         .solarizar__content--text {
             height: min-content;
             text-align: justify;
+            a {
+                color: $verde;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
         }
 
         .solarizar__content--img {
