@@ -205,55 +205,176 @@ button.navbar-toggler:focus {
       .codificar .codificar__content .codificar__content--img {
         display: none; } }
 
-.geometria {
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 1rem 0rem 1rem 0rem; }
-  .geometria .geometria__content {
+@media (min-width: 992px) {
+  .geometria {
+    height: fit-content;
+    margin-top: 2rem;
     display: flex;
-    justify-content: space-around; }
-    @media (min-width: 992px) {
-      .geometria .geometria__content {
-        flex-direction: row; } }
-    @media (max-width: 992px) {
-      .geometria .geometria__content {
-        flex-direction: column;
-        margin: 0 auto;
-        align-items: center; } }
-    .geometria .geometria__content .geometria__content--img {
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
+    flex-direction: column;
+    justify-content: center; }
+    .geometria #geometria-sagrada {
+      margin-bottom: 1.5rem; }
+    .geometria .geometria__main {
       display: flex;
-      justify-content: center;
+      flex-direction: column; }
+      .geometria .geometria__main .geometria__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        background-color: #e7d8af8a;
+        padding: 1rem;
+        border-radius: 15px; }
+        .geometria .geometria__main .geometria__content .geometria__content--titule {
+          background-color: #efde8193;
+          padding: 0.8rem 1rem;
+          text-decoration: none;
+          letter-spacing: 4px;
+          border-radius: 0.5rem;
+          width: max-content;
+          display: flex;
+          align-self: center;
+          margin-bottom: 1rem; }
+          .geometria .geometria__main .geometria__content .geometria__content--titule h3 {
+            color: #0647d1;
+            margin: 0; }
+        .geometria .geometria__main .geometria__content .geometria__content--img_text {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around; }
+          .geometria .geometria__main .geometria__content .geometria__content--img_text .geometria__content--img {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            width: 40%;
+            height: 21rem;
+            width: 21rem;
+            margin: 0 auto; }
+          .geometria .geometria__main .geometria__content .geometria__content--img_text #flor {
+            background-image: url(../img/flor_de_la_vida.jpg); }
+          .geometria .geometria__main .geometria__content .geometria__content--img_text #metatron {
+            background-image: url(../img/metraton.jpg); }
+          .geometria .geometria__main .geometria__content .geometria__content--img_text #modal-geometrias {
+            display: none; }
+          .geometria .geometria__main .geometria__content .geometria__content--img_text .geometria__content--text {
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            width: 60%;
+            height: min-content;
+            text-align: justify; }
+            .geometria .geometria__main .geometria__content .geometria__content--img_text .geometria__content--text p {
+              margin: 0rem 0rem 0.3rem 0rem;
+              text-indent: 0; } }
+
+@media (max-width: 992px) {
+  .geometria {
+    height: fit-content;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .geometria #geometria-sagrada {
+      margin-bottom: 1.5rem; }
+    .geometria .geometria__main {
+      display: flex;
+      flex-direction: column; }
+      .geometria .geometria__main .geometria__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        background-color: #e7d8af8a;
+        padding: 1rem;
+        border-radius: 15px; }
+        .geometria .geometria__main .geometria__content .geometria__content--titule {
+          background-color: #efde8193;
+          padding: 0.8rem 1rem;
+          text-decoration: none;
+          letter-spacing: 4px;
+          border-radius: 0.5rem;
+          width: max-content;
+          display: flex;
+          align-self: center;
+          margin-bottom: 1rem; }
+          .geometria .geometria__main .geometria__content .geometria__content--titule h3 {
+            color: #0647d1;
+            margin: 0; }
+        .geometria .geometria__main .geometria__content .geometria__content--img_text {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; }
+          .geometria .geometria__main .geometria__content .geometria__content--img_text .geometria__content--img {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            width: 40%;
+            height: 21rem;
+            width: 21rem;
+            margin: 0 auto; }
+          .geometria .geometria__main .geometria__content .geometria__content--img_text #flor {
+            background-image: url(../img/flor_de_la_vida.jpg); }
+          .geometria .geometria__main .geometria__content .geometria__content--img_text #metatron {
+            background-image: url(../img/metraton.jpg); }
+          .geometria .geometria__main .geometria__content .geometria__content--img_text #modal-geometrias {
+            margin: 1rem 0rem 0rem 0rem;
+            background-color: #efde8193;
+            padding: 0.8rem 1rem;
+            border-radius: 0.5rem;
+            width: max-content;
+            align-self: center;
+            border: none; }
+            .geometria .geometria__main .geometria__content .geometria__content--img_text #modal-geometrias span {
+              color: #0647d1; }
+          .geometria .geometria__main .geometria__content .geometria__content--img_text .geometria__content--text {
+            display: none; } }
+
+@media (max-width: 992px) {
+  .geometria {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0rem 1rem 0rem; }
+    .geometria .geometria__content {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      margin: 0 auto;
       align-items: center; }
-      @media (max-width: 992px) {
-        .geometria .geometria__content .geometria__content--img {
-          width: 18rem;
-          height: 18rem;
-          margin: 1rem 0rem; } }
-      @media (min-width: 992px) {
-        .geometria .geometria__content .geometria__content--img {
-          width: 21rem;
-          height: 21rem;
-          margin: 1rem; } }
-      .geometria .geometria__content .geometria__content--img .geometria__content--img--text {
-        width: fit-content;
-        background-color: #efde8193;
-        padding: 0.5rem 1rem;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 2rem;
-        letter-spacing: 4px;
-        color: #0647d1;
-        border-radius: 0.5rem;
-        text-align: center; }
-    .geometria .geometria__content #flor {
-      background-image: url(../img/flor_de_la_vida.jpg); }
-    .geometria .geometria__content #metatron {
-      background-image: url(../img/metraton.jpg); }
+      .geometria .geometria__content .geometria__content--img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18rem;
+        height: 18rem;
+        margin: 1rem 0rem; }
+        .geometria .geometria__content .geometria__content--img .geometria__content--img--text {
+          width: fit-content;
+          background-color: #efde8193;
+          padding: 0.5rem 1rem;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 2rem;
+          letter-spacing: 4px;
+          color: #0647d1;
+          border-radius: 0.5rem;
+          text-align: center; }
+      .geometria .geometria__content #flor {
+        background-image: url(../img/flor_de_la_vida.jpg); }
+      .geometria .geometria__content #metatron {
+        background-image: url(../img/metraton.jpg); } }
 
 .intencionar {
   height: fit-content;
@@ -446,7 +567,10 @@ button.navbar-toggler:focus {
       background-color: #90b48227; }
   .faq__preguntas .accordion .accordion-item .accordion-collapse .accordion-body {
     font-weight: 350;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    text-align: justify; }
+    .faq__preguntas .accordion .accordion-item .accordion-collapse .accordion-body p {
+      font-size: 1.2rem; }
 
 .consulta {
   height: fit-content;
