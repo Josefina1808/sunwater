@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;500;900&display=swap");
 * {
   /* margin: 0;
@@ -20,9 +21,9 @@
       font-weight: 500;
       padding: 2rem 0rem 1rem 0rem; }
     * body h3 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 400;
-      padding-left: 2rem; }
+      padding-left: 0rem; }
     * body p {
       font-size: 1.3rem;
       font-weight: 300;
@@ -30,10 +31,15 @@
     * body ul,
     * body ol {
       list-style-type: none;
-      text-decoration: none; }
+      text-decoration: none;
+      padding-left: 0rem; }
     * body a {
       text-decoration: none;
-      color: #90B482; }
+      color: #90B482;
+      font-weight: 400; }
+    * body .texto_azul {
+      color: #012e67;
+      font-weight: 400; }
 
 .navbar {
   background-color: #e5d09bb7;
@@ -193,35 +199,22 @@ button.navbar-toggler:focus {
       margin: 0; }
       .codificar .codificar__content .codificar__content--text p {
         margin-bottom: 0rem; }
-      .codificar .codificar__content .codificar__content--text li {
-        padding: 0.5rem 0rem;
-        font-size: 1.4rem; }
-        .codificar .codificar__content .codificar__content--text li a {
-          color: #90B482;
-          font-weight: 500; }
-    .codificar .codificar__content .codificar__content--img {
-      background-image: url(../img/7.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; }
   @media (max-width: 992px) {
     .codificar .codificar__content {
       flex-direction: column; }
       .codificar .codificar__content .codificar__content--img {
         display: none; } }
   @media (min-width: 992px) {
-    .codificar .codificar__content .codificar__content--text {
-      width: 50%; }
     .codificar .codificar__content .codificar__content--img {
       width: 50%;
       margin-left: 2rem; } }
 
 .geometria {
   height: fit-content;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  margin: 1rem 0rem 1rem 0rem; }
   .geometria .geometria__content {
     display: flex;
     justify-content: space-around; }
@@ -274,11 +267,12 @@ button.navbar-toggler:focus {
   justify-content: center; }
   .intencionar .intencionar__content {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    height: max-content; }
     .intencionar .intencionar__content .intencionar__content--text {
-      height: min-content;
       text-align: justify;
-      padding: 0rem 1rem 1rem 2rem; }
+      font-size: 1.4rem;
+      font-weight: 300; }
     .intencionar .intencionar__content .intencionar__content--img {
       background-image: url(../img/5.jpg);
       background-size: cover;
@@ -291,11 +285,16 @@ button.navbar-toggler:focus {
         height: 15rem;
         margin-bottom: 2rem; } }
   @media (min-width: 992px) {
-    .intencionar .intencionar__content .intencionar__content--text {
-      width: 50%; }
-    .intencionar .intencionar__content .intencionar__content--img {
-      width: 50%;
-      margin: 0rem 0rem 2rem 2rem; } }
+    .intencionar .intencionar__content {
+      height: 18rem; }
+      .intencionar .intencionar__content .intencionar__content--text {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        margin: 0rem 1rem 1rem 0rem; }
+      .intencionar .intencionar__content .intencionar__content--img {
+        width: 50%;
+        margin: 0rem 0rem 2rem 2rem; } }
 
 .historia {
   height: fit-content;
@@ -305,6 +304,9 @@ button.navbar-toggler:focus {
   justify-content: center;
   grid-column: 1 / 13;
   grid-row: 1 / 7; }
+  .historia .historia__content .historia__content--text .firma {
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive; }
   @media (max-width: 992px) {
     .historia .historia__content {
       display: flex;
@@ -402,7 +404,8 @@ button.navbar-toggler:focus {
     .galeria-fotos .galeria-fotos__content img {
       width: 21rem;
       height: 21rem;
-      padding: 1rem 0rem; }
+      padding: 1rem 0rem;
+      border-radius: 15px; }
 
 .galeria-musical {
   height: fit-content;
