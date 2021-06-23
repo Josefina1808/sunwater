@@ -585,48 +585,30 @@ button.navbar-toggler:focus {
   grid-column: 1/13;
   grid-row: 1/10; }
   .contacto .contacto__texto p {
-    margin: 1rem 0rem; }
+    margin: 1rem 0rem;
+    text-indent: 0;
+    font-size: 1.6rem; }
   .contacto .contacto__texto a {
-    color: var(--verde);
+    color: #90B482;
     font-weight: 500; }
   .contacto .contacto__texto a:hover {
     text-decoration: underline; }
-  .contacto .contacto__form {
-    margin: 0 auto; }
-    .contacto .contacto__form div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 1rem 0rem;
-      font-weight: 300; }
-      .contacto .contacto__form div .form-control:focus {
-        border-color: #90B482;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(144, 180, 130, 0.5); }
-      .contacto .contacto__form div .form-control {
-        color: #6E6E68;
-        border: 1px solid #90B482; }
-    .contacto .contacto__form .contacto__form--news {
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
-      .contacto .contacto__form .contacto__form--news .form-check-input {
-        border: #90B482;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(144, 180, 130, 0.5); }
-      .contacto .contacto__form .contacto__form--news .form-check-input:checked {
-        background-color: #90B482; }
-    .contacto .contacto__form .contacto__form--botones {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center; }
-      .contacto .contacto__form .contacto__form--botones input {
-        font-weight: 300;
-        padding: 0.5rem 1rem;
-        background-color: #90b48227;
-        border: solid #90B482;
-        border-radius: 0.5rem; }
-      .contacto .contacto__form .contacto__form--botones input:hover {
-        font-weight: 500; }
+  .contacto .contacto__redes div {
+    display: flex;
+    flex-direction: row; }
+    .contacto .contacto__redes div a i {
+      color: #012e67; }
+    .contacto .contacto__redes div .contacto__redes--texto {
+      color: #012e67;
+      background-color: #e5d09bb7;
+      border-radius: 5px;
+      padding: 0rem 1rem 0rem 1rem;
+      letter-spacing: 0.3rem;
+      font-weight: 400;
+      margin-left: 2rem;
+      font-size: 2rem;
+      height: fit-content;
+      align-self: center; }
 
 .redes {
   width: 100vw;
