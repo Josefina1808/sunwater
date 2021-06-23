@@ -337,45 +337,6 @@ button.navbar-toggler:focus {
           .geometria .geometria__main .geometria__content .geometria__content--img_text .geometria__content--text {
             display: none; } }
 
-@media (max-width: 992px) {
-  .geometria {
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 1rem 0rem 1rem 0rem; }
-    .geometria .geometria__content {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      margin: 0 auto;
-      align-items: center; }
-      .geometria .geometria__content .geometria__content--img {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 18rem;
-        height: 18rem;
-        margin: 1rem 0rem; }
-        .geometria .geometria__content .geometria__content--img .geometria__content--img--text {
-          width: fit-content;
-          background-color: #efde8193;
-          padding: 0.5rem 1rem;
-          text-decoration: none;
-          font-weight: 500;
-          font-size: 2rem;
-          letter-spacing: 4px;
-          color: #0647d1;
-          border-radius: 0.5rem;
-          text-align: center; }
-      .geometria .geometria__content #flor {
-        background-image: url(../img/flor_de_la_vida.jpg); }
-      .geometria .geometria__content #metatron {
-        background-image: url(../img/metraton.jpg); } }
-
 .intencionar {
   height: fit-content;
   margin: 0 auto;
