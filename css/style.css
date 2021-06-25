@@ -388,7 +388,6 @@ button.navbar-toggler:focus {
 
 .intencionar .intencionar__content .intencionar__content--img {
   background-image: url(../img/intencionar.jpg);
-  background-size: cover;
   background-position: top;
   background-position: center top;
   background-repeat: no-repeat; }
@@ -398,19 +397,21 @@ button.navbar-toggler:focus {
     flex-direction: column; }
   .intencionar .intencionar__content .intencionar__content--img {
     height: 15rem;
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem;
+    background-size: contain; } }
 
 @media (min-width: 992px) {
   .intencionar .intencionar__content {
     height: 18rem; }
   .intencionar .intencionar__content .intencionar__content--text {
-    width: 50%;
+    width: 75%;
     display: flex;
     align-items: center;
     margin: 0rem 1rem 1rem 0rem; }
   .intencionar .intencionar__content .intencionar__content--img {
-    width: 50%;
-    margin: 0rem 0rem 2rem 2rem; } }
+    width: 25%;
+    margin: 0rem 0rem 2rem 2rem;
+    background-size: cover; } }
 
 /* NOSOTROS */
 .historia {
