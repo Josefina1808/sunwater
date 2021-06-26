@@ -457,7 +457,9 @@ button.navbar-toggler:focus {
     background-image: url(../img/1.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat; }
+  .pilares .pilares__content .pilares__content--valores img#consciencia {
+    height: 12rem; } }
 
 .pilares {
   height: fit-content;
