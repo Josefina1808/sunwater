@@ -3,9 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;500;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;500;900&display=swap");
 * {
-  /* margin: 0;
-    padding: 0;
-    box-sizing: border-box; */
   font-family: "Yantramanav", sans-serif;
   color: #012e67; }
 
@@ -52,7 +49,7 @@
   font-weight: 400; }
 
 .navbar {
-  background-color: #0f629571;
+  background-color: #0f62959d;
   animation-name: aparecer;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -188,7 +185,6 @@ div#index {
     padding: 0.5rem 1rem;
     font-weight: 100;
     border-radius: 0.5rem;
-    letter-spacing: 0px;
     animation-name: aparecer;
     animation-duration: 2s;
     animation-iteration-count: 1; }
@@ -207,26 +203,21 @@ div#index {
   justify-content: center;
   grid-column: 1/13;
   grid-row: 1 / 4; }
-
-.solarizar .solarizar__content {
-  display: flex;
-  justify-content: space-between; }
-
-.solarizar .solarizar__content .solarizar__content--text {
-  height: min-content;
-  text-align: justify; }
-
-.solarizar .solarizar__content .solarizar__content--text a {
-  color: #37afca; }
-
-.solarizar .solarizar__content .solarizar__content--text a:hover {
-  text-decoration: underline; }
-
-.solarizar .solarizar__content .solarizar__content--img {
-  background-image: url(../img/4.jpg);
-  background-size: cover;
-  background-position: bottom right;
-  background-repeat: no-repeat; }
+  .solarizar .solarizar__content {
+    display: flex;
+    justify-content: space-between; }
+    .solarizar .solarizar__content .solarizar__content--text {
+      height: min-content;
+      text-align: justify; }
+      .solarizar .solarizar__content .solarizar__content--text a {
+        color: #37afca; }
+      .solarizar .solarizar__content .solarizar__content--text a:hover {
+        text-decoration: underline; }
+    .solarizar .solarizar__content .solarizar__content--img {
+      background-image: url(../img/4.jpg);
+      background-size: cover;
+      background-position: bottom right;
+      background-repeat: no-repeat; }
 
 @media (max-width: 992px) {
   .solarizar .solarizar__content {
@@ -237,11 +228,11 @@ div#index {
 @media (min-width: 992px) {
   .solarizar .solarizar__content {
     flex-direction: row; }
-  .solarizar .solarizar__content .solarizar__content--text {
-    width: 50%; }
-  .solarizar .solarizar__content .solarizar__content--img {
-    width: 50%;
-    margin-left: 2rem; } }
+    .solarizar .solarizar__content .solarizar__content--text {
+      width: 50%; }
+    .solarizar .solarizar__content .solarizar__content--img {
+      width: 50%;
+      margin-left: 2rem; } }
 
 .codificar {
   height: fit-content;
@@ -251,20 +242,17 @@ div#index {
   justify-content: center;
   grid-column: 1/13;
   grid-row: 4 / 13; }
-
-.codificar .codificar__content {
-  display: flex;
-  justify-content: space-between; }
-
-.codificar .codificar__content .codificar__content--text {
-  height: min-content;
-  text-align: justify;
-  font-size: 1.2rem;
-  font-weight: 300;
-  margin: 0; }
-
-.codificar .codificar__content .codificar__content--text p {
-  margin-bottom: 0rem; }
+  .codificar .codificar__content {
+    display: flex;
+    justify-content: space-between; }
+    .codificar .codificar__content .codificar__content--text {
+      height: min-content;
+      text-align: justify;
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin: 0; }
+      .codificar .codificar__content .codificar__content--text p {
+        margin-bottom: 0rem; }
 
 @media (max-width: 992px) {
   .codificar .codificar__content {
@@ -392,14 +380,14 @@ div#index {
     background-image: url(../img/metraton.jpg); }
   .geometria .geometria__main .geometria__content .geometria__content--img_text #modal-geometrias {
     margin: 1rem 0rem 0rem 0rem;
-    background-color: #efde8193;
+    background-color: rgba(255, 255, 255, 0.651);
     padding: 0.8rem 1rem;
     border-radius: 0.5rem;
     width: max-content;
     align-self: center;
     border: none; }
   .geometria .geometria__main .geometria__content .geometria__content--img_text #modal-geometrias span {
-    color: #0647d1; }
+    color: #012e67; }
   .geometria .geometria__main .geometria__content .geometria__content--img_text .geometria__content--text {
     display: none; } }
 
