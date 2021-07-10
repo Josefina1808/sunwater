@@ -171,6 +171,18 @@ button.navbar-toggler:focus {
     opacity: 1; } }
 
 /* INDEX */
+@media (min-width: 992px) {
+  .carousel.slide .carousel-inner .carousel-item.active.mobile {
+    display: none; }
+  .carousel.slide .carousel-inner .carousel-item.active.pc {
+    display: show; } }
+
+@media (max-width: 992px) {
+  .carousel.slide .carousel-inner .carousel-item.active.mobile {
+    display: show; }
+  .carousel.slide .carousel-inner .carousel-item.active.pc {
+    display: none; } }
+
 div#index {
   margin: 0 auto;
   width: fit-content;
