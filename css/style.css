@@ -701,7 +701,7 @@ div#index {
 
 .contacto .contacto__redes div .contacto__redes--texto {
   color: #012e67;
-  background-color: #e5d09bb7;
+  background-color: rgba(255, 255, 255, 0.651);
   border-radius: 5px;
   padding: 0rem 1rem 0rem 1rem;
   font-weight: 400;
